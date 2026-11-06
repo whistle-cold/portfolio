@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaperMan · 前端开发者</title>
+  <meta name="description" content="前端开发者个人作品集:技能、项目与联系方式。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // 尽早应用主题,避免闪烁
+    try {
+      const t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">跳到主要内容</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="主导航" data-i18n-attr="aria-label:a11y.mainNav">
+      <a class="logo" href="#top">PaperMan<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" data-i18n="nav.about">关于</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">技能</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">项目</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">联系</a></li>
+        <li class="nav-actions">
+          <button class="lang-toggle" type="button" data-i18n="lang.toggle" data-i18n-attr="aria-label:a11y.lang;title:a11y.lang" aria-label="Switch to English" title="Switch to English">EN</button>
+          <button class="theme-toggle" type="button" aria-label="切换深浅色主题" title="切换主题" data-i18n-attr="aria-label:a11y.theme;title:a11y.themeTitle">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="top">
+      <p class="eyebrow" data-i18n="hero.eyebrow">你好,我是</p>
+      <h1>PaperMan</h1>
+      <p class="hero-sub" data-i18n-html="hero.sub">一名专注于 <strong>体验与性能</strong> 的前端开发者,<br class="hide-sm" />用代码把想法变成好用、好看的产品。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">联系我</a>
+        <a class="btn btn-ghost" href="#projects" data-i18n="hero.work">查看作品</a>
+      </div>
+      <p class="availability"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.available">目前开放新的工作机会</span></p>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about">
+      <h2 class="section-title" data-i18n="about.title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n-html="about.p1">我有 <strong>X 年</strong> 前端开发经验,熟悉现代 Web 技术栈,参与过从 0 到 1 的产品搭建,也做过大型项目的性能优化与工程化改造。</p>
+          <p data-i18n="about.p2">我关注可访问性、交互细节和代码可维护性,喜欢和设计师、后端同学紧密协作,把复杂需求拆成清晰、可交付的方案。</p>
+        </div>
+        <ul class="stats">
+          <li><strong>X+</strong><span data-i18n="about.years">年经验</span></li>
+          <li><strong>20+</strong><span data-i18n="about.shipped">上线项目</span></li>
+          <li><strong>100%</strong><span data-i18n="about.love">热爱前端</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <h2 class="section-title" data-i18n="skills.title">技能</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3 data-i18n="skills.core">核心语言</h3>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS3 / Sass</li><li>JavaScript (ES2023)</li><li>TypeScript</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.frameworks">框架与库</h3>
+          <ul class="tags">
+            <li>React</li><li>Next.js</li><li>Vue 3</li><li>Tailwind CSS</li><li>Redux / Zustand</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.tooling">工程化</h3>
+          <ul class="tags">
+            <li>Vite</li><li>Webpack</li><li>ESLint / Prettier</li><li>Git</li><li>CI/CD</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills.other">其他</h3>
+          <ul class="tags">
+            <li>Node.js</li><li data-i18n="skills.testing">测试 (Jest / Playwright)</li><li data-i18n="skills.perf">性能优化</li><li data-i18n="skills.a11y">无障碍 (a11y)</li><li>Figma</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container" id="projects">
+      <h2 class="section-title" data-i18n="projects.title">精选项目</h2>
+      <div class="projects-grid">
+        <article class="card project">
+          <div class="project-thumb" aria-hidden="true">01</div>
+          <h3 data-i18n="projects.a.name">项目名称 A</h3>
+          <p data-i18n="projects.a.desc">一句话描述项目解决了什么问题,以及你在其中负责的部分和取得的成果。</p>
+          <ul class="tags small"><li>React</li><li>TypeScript</li><li>Vite</li></ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.demo">在线演示 ↗</a>
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.source">源码 ↗</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project-thumb" aria-hidden="true">02</div>
+          <h3 data-i18n="projects.b.name">项目名称 B</h3>
+          <p data-i18n="projects.b.desc">例如:将首屏加载时间从 4s 优化到 1.2s,Lighthouse 性能分提升至 95+。</p>
+          <ul class="tags small"><li>Next.js</li><li>Tailwind</li></ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.demo">在线演示 ↗</a>
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.source">源码 ↗</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project-thumb" aria-hidden="true">03</div>
+          <h3 data-i18n="projects.c.name">项目名称 C</h3>
+          <p data-i18n="projects.c.desc">例如:为团队搭建的组件库,覆盖 40+ 组件,支持主题定制与按需加载。</p>
+          <ul class="tags small"><li>Vue 3</li><li>Storybook</li></ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.demo">在线演示 ↗</a>
+            <a href="#" target="_blank" rel="noopener" data-i18n="projects.source">源码 ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact">
+      <h2 class="section-title" data-i18n="contact.title">联系我</h2>
+      <p class="contact-intro" data-i18n="contact.intro">无论是工作机会、项目合作,还是单纯想交流技术,都欢迎随时联系我,我通常会在 24 小时内回复。</p>
+
+      <div class="contact-grid">
+        <div class="contact-methods">
+          <div class="contact-item">
+            <span class="label" data-i18n="contact.email">邮箱</span>
+            <div class="contact-row">
+              <a href="mailto:you@example.com" id="email-link">you@example.com</a>
+              <button class="copy-btn" data-copy="you@example.com" aria-label="复制邮箱地址" data-i18n="contact.copy" data-i18n-attr="aria-label:contact.copyEmail">复制</button>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="label" data-i18n="contact.wechat">微信</span>
+            <div class="contact-row">
+              <span>your-wechat-id</span>
+              <button class="copy-btn" data-copy="your-wechat-id" aria-label="复制微信号" data-i18n="contact.copy" data-i18n-attr="aria-label:contact.copyWechat">复制</button>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="label" data-i18n="contact.social">社交主页</span>
+            <ul class="socials">
+              <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub ↗</a></li>
+              <li><a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+              <li><a href="https://juejin.cn/user/your-id" target="_blank" rel="noopener" data-i18n="contact.juejin">掘金 ↗</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost" href="resume.pdf" download data-i18n="contact.resume">下载简历 (PDF)</a>
+        </div>
+
+        <form class="contact-form card" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name" data-i18n="form.name">你的称呼</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="form.email">你的邮箱</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">想说的话</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit" data-i18n="form.submit">发送消息</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PaperMan · <span data-i18n="footer.built">用 ♥ 和纯 HTML/CSS/JS 构建</span></p>
+      <a href="#top" data-i18n="footer.top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
